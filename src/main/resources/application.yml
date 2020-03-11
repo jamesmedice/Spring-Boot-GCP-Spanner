@@ -16,8 +16,6 @@ spring:
             label: master
         gcp:
             project-id: ${PROJECT_ID:qwiklabs-gcp-02-b9b8abb1d99a}
-            credentials:
-                location: classpath:key.json
             spanner:
                  instance-id: ${INSTANCE_ID:marketplace}
                  database: ${DATASET_NAME:marketplace}
