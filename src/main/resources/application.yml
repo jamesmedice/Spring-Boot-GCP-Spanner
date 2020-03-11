@@ -19,5 +19,5 @@ spring:
             credentials:
                 location: classpath:key.json
             spanner:
-                 instance-id: ${INSTANCE_ID}
+                 instance-id: ${INSTANCE_ID:marketplace}
                  database: ${DATASET_NAME:marketplace}
