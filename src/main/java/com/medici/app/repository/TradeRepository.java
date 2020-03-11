@@ -25,6 +25,4 @@ public interface TradeRepository extends SpannerRepository<Trade, Key> {
 
 	int countByAction(String action);
 
-	List<Trade> fetchByActionNamedQuery(@Param("tag0") String action);
-
 }
