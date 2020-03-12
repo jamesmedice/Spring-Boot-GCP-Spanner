@@ -2,7 +2,6 @@ package com.medici.app.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationRunner;
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.cloud.gcp.data.spanner.repository.config.EnableSpannerAuditing;
 import org.springframework.cloud.gcp.data.spanner.repository.config.EnableSpannerRepositories;
@@ -17,7 +16,6 @@ import com.medici.app.repository.TradeRepository;
 import com.medici.app.repository.TraderRepository;
 
 @Configuration
-@EnableAutoConfiguration
 @EntityScan(basePackageClasses = { Trader.class, Trade.class })
 @EnableTransactionManagement
 @EnableSpannerAuditing
