@@ -1,5 +1,5 @@
 #set up properties
-PROJECT_ID: qwiklabs-gcp-01-f5b5f0ef401f
+PROJECT_ID: qwiklabs-gcp-01-b5aec878831c
 
 server:
     port: ${DEFAULT_PORT:9000}
@@ -15,7 +15,9 @@ spring:
             profile: dev, cloud, spanner
             label: master
         gcp:
-            project-id: ${PROJECT_ID:qwiklabs-gcp-01-f5b5f0ef401f}
+            credentials:
+                location: classpath:key.json
+            project-id: ${PROJECT_ID:qwiklabs-gcp-01-b5aec878831c}
             spanner:
                  instance-id: ${INSTANCE_ID:marketplace-db}
                  database: ${DATASET_NAME:marketplace}
